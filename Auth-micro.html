@@ -13,20 +13,72 @@
             <br><br>
 
             <form action="user-details.txt">
+                <!-- form tag is used to create a form. in action we add what we have to do with this form. 
+                    It has more to do with sql where we save form  -->
             <label for="Username">Enter Username:</label>
-            <input type="text" id="Username" placeholder="Enter your username" required>
+            <!-- label tag is used to add label to input. so that user can know what this input is, 
+                and we link (by "for" tag) label with its input. i:e in this case username. -->
+            <input type="text" id="Username" placeholder="Enter your username" name="username" required>
+            <!-- input tag is used to take input, 
+                type tag shows type of input, 
+                id tag means data must be unique in whole document,
+                placeholder is used to write highleted input type within the input (i:e: in the box where user have to give input)
+                name tag is used store different parts of form together.
+                required tag is used to make that input of form neccessary, without filling it form can't be submitted.
+             -->
             <br>
             <br>
 
             <label for="Email">Enter Email Id:</label>
-            <input type="email" id="Email" placeholder="Enter your email" required>
+            <input type="email" id="Email" placeholder="Enter your email" name="email" required>
             <br>
             <br>
 
             <label for="Password">Enter Password:</label>
-            <input type="password" id="Password" placeholder="Enter your password" required>
+            <input type="password" id="Password" placeholder="Enter your password" name="password" required>
+            <!-- in this specific case user can't see what he is typing because it gets change in stars. 
+                this is because input type is password, and no one is allowed to see password. -->
             <br>
             <br>
+
+            <p> Select your Age:</p>
+            <input type="radio" name="Age" value="0-25" id="option-1">
+            <label for="option-1">0-25</label>
+            <!-- radio type means in bulleted input where we just have to mark right input -->
+
+            <input type="radio" name="Age" value="26-50" id="option-2">
+            <label for="option-2">26-50</label>
+            
+            <input type="radio" name="Age" value="51-75" id="option-3">
+            <label for="option-3">51-75</label>
+            
+            <input type="radio" name="Age" value="76-100" id="option-4">
+            <label for="option-4">76-100</label>
+            <br><br>
+
+            <label for="question">Security question:</label>
+            <select name="question" id="question">
+                <option value="q1">What is your favourite colour.</option>
+                <option value="q2">What is your school name.</option>
+                <option value="q3">What is your birth place.</option>
+                <option value="q4">What is your favourite book name.</option>
+            </select>
+            <!-- <in select tag we don't ask for input, 
+                we actually give choice to user for selection of a input from numbers of input.
+                option tag used to add options for select tag question. -->
+                <br><br>
+            
+            <label for="Security question answer">Security question answer:</label>
+            <input type="text" id="Security question answer" name="Security question answer" placeholder="Write your answer">
+            <br><br>
+
+            <label for="bio">Enter our Bio:</label><br>
+            <!-- here we are using br tag so that we can put label above the text box -->
+            <textarea name="bio" id="bio" cols="30" rows="30">
+            </textarea>
+            <!-- text area tag is used to write long texts in a form which can't be written in any normal input.
+            id means id, cols means column, rows means rows, rows and cols describe how far area and how tall can this box be -->
+            <br><br>
 
             <input type="Submit" value="Create Account">
 
