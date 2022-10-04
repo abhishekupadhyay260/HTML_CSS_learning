@@ -28,17 +28,21 @@
 
     </p>
 
-    <img src="images/IRCTC-Color.png">
-    <!-- to add image with source (src) -->
+    <img src="images/IRCTC-Color.png" alt="Irctc logo ">
+    <!-- to add image with source (src), and alt tag just add image description -->
 
     <p>
         <h2> Humare yha farzi railway ticket book kiye jaate hain, kripya iss ticket par train me yatra n kare. Asuvidha ke liye khed hai.</h2>
     </p>
 
+    <hr>
+    <!-- hr tag is used to add horizontal line  -->
+
     <div>
     <!-- div tag is used to create division between different parts of page, i:e it devide various sections for better readbility -->
 
     <h2><a href="http://localhost:8080/">Train info microservice</a></h2>
+    <!-- a means anchor and href means hyperlink -->
     <!-- <a href= contains url with its address -->
 
     <h2><a href="http://localhost:3000/">Auth-Micro</a></h2>
@@ -57,6 +61,8 @@
     <h2><a href="http://127.0.0.1:5500/get-train-details.html">Get-train-details</a></h2>
     </div>
 
+    <hr>
+
     <ul>
         <!-- ul tag is unordered list tag, we can't write anything random, here we store list via <li> tag. 
             list get stored in unordered way (i:bulleted in point) -->
@@ -67,12 +73,28 @@
     </ul>
 
     <ol>
-        <!-- ol tag is ordered list tag, it is exactly like ul, just here list get ordered (i:e numbering) -->
+        <!-- ol tag is ordered list tag, it is exactly like ul, just here list get ordered (i:e in numbering) -->
             <h3><li>Abhishek</li></h3>
             <h3><li>Aman</li></h3>
             <h3><li>Anurag</li></h3>
 
     </ol>
+
+    <span>
+        <!-- it is similar to <p> tag </p>, but it is useful when used with js, css, class etc. 
+            (more details will be added later when learned more.) -->
+        I am <br>just span.
+        <!-- <br> tag used for line break -->
+    </span>
+    <hr>
+    <!-- remember br and hr are some of the tag which don't have closing tag  -->
+
+    <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">
+        <!-- blockquote is used to write and any quote and cite means citation. it is added to add link of site from where it is copied. -->
+        The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela
+    </blockquote>
+
+    <p style="color: red;"> Just adding this to show that we can use styling here also, otherwise we will do all styling in css.</p>
 
 </body>
 </html>
