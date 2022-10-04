@@ -1,13 +1,22 @@
-
+/* CSS work on two things "Selectors" and "declarations" */
 h1 {
     color: #ed1010;
-    /* background-color: rgb(37, 49, 156); */
+    background-color: rgb(37, 49, 156);
     font-size: 50px;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     font-family: Arial;
     text-align: center;
     border-bottom: 5px solid blue;
 }
+/* In this case "h1" tag is selectors i:e data on which we are giving attributes/formatting
+and "color", "font size", "text-align" etc are declarations. i:e attributes/formatting which we have given */
+
+/* there are thousands of tags and you can't learn all, hence don't remember, just google when needed. */
+
+/* We can also add colours via there hex code. for ex - #42f4f1
+hex codes are different codes for more saturated colours. 
+it consists of RGB in which 
+first two number denotes R (first two i:e 42, in this case), G (middle two i:e f4), and B(last two i:e f1)  */
 
 
 input{
@@ -35,4 +44,48 @@ a[href]{
 
 h2 {
     text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+    /* column-count: 3;
+    column-gap: 3px; */
+}
+
+ul{
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(159, 36, 57);
+    text-align: center;
+}
+
+ol{
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: rgb(46, 36, 159); */
+
+    /* we can also add various attributes in single line, as done below */
+    border-bottom: 5px solid crimson;
+    border-left: 10px dashed rebeccapurple;
+    border-right: 5px dotted palevioletred;
+}
+
+li{
+    list-style-type: lower-alpha;
+    /* list style type property is bulleted or numbered points which we can modify */
+    text-shadow: 2px 2px gray;
+}
+
+span{
+    display: block;
+    /* this tag is changes inline elements to block elements. */
+    margin: 20px solid crimson;
+    padding: 20px solid green;
+    /* both margin and padding are invisible and can be seen when watched through inspect/view page source of page. 
+    (confirm it once from internet before telling someone) */
+}
+
+div{
+    display: inline;
+    /* this tag changes block element to inline element */
+    margin: 20px solid crimson;
+    padding: 20px solid green;
 }
