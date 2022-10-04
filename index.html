@@ -1,27 +1,45 @@
 <!DOCTYPE html>
+<!-- !doctype is only html tag where ! mark is used before tag, it actually defines that this document is of html type -->
+<!-- html is used to structure content of web page, i:e adding images, texts, forms etc -->
+<!-- To know about any tag just put cursor on that tag, details will be shown in pop up. -->
+<!-- Still writing everything in comment, just to write details according to my understanding, just to revise letter -->
 <html>
 
 <head>
+    <!-- head tag contains extra information about website like title and link to css etc. -->
+    <!-- content inside head don't get rendered, only body content get rendered -->
     
     <link rel="stylesheet" href="styles.css">
+    <!-- to link css to this html page  -->
+    <!-- css is used to style web page to make them look better, by changing font size, colour, position, effects etc -->
     
     <title>
         Online Railway Reservation System
     </title>
+    <!-- title tage is used to give title which we see as website name  -->
 </head>
 
 <body> 
     <p>
+        <!-- p is pharagraph tag here we write content which shows on web page -->
        <h1> Welcome to <strong> Online Railway Reservation System </strong></h1>
+       <!-- h is adding tag h1, h2 h3 etc are size from largest to smallest -->
+       <!-- strong tag is used to change content into bold and similarly <em> tag is used </em> to emphasize the content (change to italic) -->
+
     </p>
 
     <img src="images/IRCTC-Color.png">
+    <!-- to add image with source (src) -->
 
     <p>
-        <!-- <h2> Humare yha farzi railway ticket book kiye jaate hain, kripya iss ticket par train me yatra n kare. Asuvidha ke liye khed hai.</h2> -->
+        <h2> Humare yha farzi railway ticket book kiye jaate hain, kripya iss ticket par train me yatra n kare. Asuvidha ke liye khed hai.</h2>
     </p>
 
+    <div>
+    <!-- div tag is used to create division between different parts of page, i:e it devide various sections for better readbility -->
+
     <h2><a href="http://localhost:8080/">Train info microservice</a></h2>
+    <!-- <a href= contains url with its address -->
 
     <h2><a href="http://localhost:3000/">Auth-Micro</a></h2>
 
@@ -37,6 +55,24 @@
     <h2><a href="http://127.0.0.1:5500/Auth-micro.html">Create Account</a></h2>
 
     <h2><a href="http://127.0.0.1:5500/get-train-details.html">Get-train-details</a></h2>
+    </div>
+
+    <ul>
+        <!-- ul tag is unordered list tag, we can't write anything random, here we store list via <li> tag. 
+            list get stored in unordered way (i:bulleted in point) -->
+            <h3><li>Abhishek</li></h3>
+            <h3><li>Aman</li></h3>
+            <h3><li>Anurag</li></h3>
+
+    </ul>
+
+    <ol>
+        <!-- ol tag is ordered list tag, it is exactly like ul, just here list get ordered (i:e numbering) -->
+            <h3><li>Abhishek</li></h3>
+            <h3><li>Aman</li></h3>
+            <h3><li>Anurag</li></h3>
+
+    </ol>
 
 </body>
 </html>
