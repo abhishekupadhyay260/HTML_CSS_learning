@@ -1,15 +1,222 @@
 header{
     /* position: static; */
     /* static position means fix position, which is also by dafault hence no change can be seen */
-    position: relative;
+    background-color: #f63232;
+    padding: 20px;
+    text-align: center;
+    /* position: relative; */
     /* now position can be change in relative to something */
-    left: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* z index bring things forward or push them back, in this case we are bringing forward */
+    /* left: 100px; */
     /* in this case position will shift 100px from left. i:e to the 100px right from original position */
     /* top: 50px; */
     /* this will shift 50px from top i:e to the bottom (or down) */
+    top: 0%;
+    left: 0%;
 }
 
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    /* whenever two values are given in padding, 1st value define top and bottom (i:e 6px in this case) and second value to left and right (i:e 12px in this case) */
+    display: inline-block;
+    border-radius: 36px;
+}
+
+.banner{
+    position: relative;
+}
 .banner img{
-    max-width: 50%;
+    max-width: 100%;
     /* this will adjust the size of the class (in this case image)  */
 }
+
+/* .banner div {
+    position: absolute;
+    due to absolute position it comes out of web page and get fixed at a spot, and every content will be in back of it
+    background-color: yellow;
+    max-width: 20%;
+} */
+
+.banner .welcome {
+    background-color: #feb614;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.banner h2 span{
+    font-size: 1.3em;
+    /* this will emphasis the font 1.3 times */
+    
+}
+
+nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 160px;
+    /* in this case navigation bar will fix at 160px from top
+    ie it won't go further up and stick to that position */
+}
+
+nav ul{
+    white-space: nowrap;
+    /* this means content will not get wrap in next line and we can see them in one single line */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 25%;
+    /* here we are using 25% because there are 4 contents which we want in same line, hence 25*4 = 100 ie one line */
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #f63232;
+}
+
+nav li a.join{
+    color: #f63232;
+}
+
+main{
+    max-width: 100%;
+    width: 1220px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    /* box sizing is used  allows us to include the padding and border in an element's total width and height. */
+
+}
+
+article h2{
+    color: #f63232;
+    font-size: 48px;
+
+}
+
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+
+.images{
+    text-align: centre;
+    margin: 80px;
+    white-space: nowrap;
+
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+.join{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+.join h2{
+    font-size: 36px;
+
+}
+
+form{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+
+footer{
+    background-color: #f63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* pseudo classes */
+/* pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). */
+
+nav li a:hover{
+    /* hover pseudo class comes into action when put cursor on it */
+    /* we use pseudo classes by adding full colon (":")in class */
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+
+form input:focus{
+    /* focus pseudo class works when we put focus (ie click) on that object */
+    border: 4px solid brown;
+    outline: none;
+
+}
+
+form input:valid{
+    /* valid pseudo class is used to show the validation of object, it works when input is valid */
+    border: 4px solid green;
+}
+
+/* nav li:first-child{ */
+    /* first child pseudo class use to modify first child (tag) of the object */
+    /* border: 3px solid red; */
+/* } */
+
+
+/* 
+What are CSS pseudo-elements?
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). 
+For example, ::first-line can be used to change the font of the first line of a paragraph. /* The first line of every <p> element. */ 
+/* p::first-line { color: blue; text-transform: uppercase; } */
+
+article p::first-line{
+    /* this will modify the first line of the article */
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+/* responsive styles */
+/* these styles comes into effect when screensize changes to a certain resolution */
+
+@media screen and (max-width: 1400px){
+    /* it will come into effect when screensize will be 1440px or less */
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    /* here when screensize will come below 1400px, font size will change to 60px */
+    nav li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+}
+
+    
