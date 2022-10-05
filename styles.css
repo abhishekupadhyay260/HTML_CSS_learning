@@ -39,7 +39,9 @@ body{
 }
 
 a[href]{
+    /* it will change link background with given colour */
     background-color: aquamarine;
+    /* we can also add specific link here to modify only that link */
 }
 
 h2 {

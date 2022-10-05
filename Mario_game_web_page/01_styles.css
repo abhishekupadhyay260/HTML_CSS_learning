@@ -1,0 +1,15 @@
+header{
+    /* position: static; */
+    /* static position means fix position, which is also by dafault hence no change can be seen */
+    position: relative;
+    /* now position can be change in relative to something */
+    left: 100px;
+    /* in this case position will shift 100px from left. i:e to the 100px right from original position */
+    /* top: 50px; */
+    /* this will shift 50px from top i:e to the bottom (or down) */
+}
+
+.banner img{
+    max-width: 50%;
+    /* this will adjust the size of the class (in this case image)  */
+}
