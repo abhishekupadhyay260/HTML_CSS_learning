@@ -1,2 +1,127 @@
-/* transform tag : it is used to transform any content (text, image etc), like translate, rotate along X,Y,Z axis. 
-It comes in 2D transform, you can found more on w3schools.com*/
+/* Transform tag :It is used to transform any content (text, image etc), like translate, rotate along X,Y,Z axis. 
+It comes in 2D transform, you can found more on w3schools.com.
+
+syntax---  */
+/* 
+object{
+    transform: rotate(360deg);
+} */
+/* this will rotate the object 360 degree  */
+
+
+
+/* tarnsition tag : transition tag is used to do transition of one object to another  form */
+
+/* syntax */
+
+/* object{
+    background-color: pink;
+    transition: 1s;
+} */
+
+/* This is original object, its background colour is pink */
+
+/* .object:hover{
+    background-color: aqua;
+} */
+
+/* this is to apply transition, in this case i am changing its background colour from pink to aqual, when we hover (put cursor) on it.
+transition will take effect in 1 second (since we have given 1s time, (see original object)), by dafault transition time would have been 0s (ie imediately) */
+
+
+
+
+/* Timing function : we use timing functions to give timing to a certain animation */
+
+/* syntax */
+
+/* object{
+    background-color: pink;
+    transition: background 1s transform 1s 0.8s  1.2s ease-in;
+}
+
+.object:hover{
+    background-color: aqua;
+    transform: rotate(360deg);
+} */
+
+/* in this case we have added two animation (transition of colour from pink to aqua, and transform the object in 1 sec),
+talking about specifically this syntax (transition: background 1s transform 0.8s 1.2s ease-in;),
+it means firstly background will change in 1sec, then there will be delay of 1.2sec (since we have given a delay), 
+then object will tarnsform in 0.8 second,
+and finally in last we have added ease-in (this is timing function), to give certain timing for animation,
+in this case (ease-in) it will start slowly and then speed up (as the name suggest, ease-in). 
+there are many timing functions, 
+see all in w3schools. */
+
+
+
+
+/* Keyframe function : The @keyframes rule specifies the animation code.
+
+The animation is created by gradually changing from one set of CSS styles to another. */
+
+/* Syntax */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 3;
+    animation-direction:reverse;
+  }
+  /* this is place (my move) where keyframe is getting used (because we used my move in keyframe),  */
+
+  /* "animation-fill-mode" is one more property which keeps object in its final position, after changes done b keyframe.
+  (although is used only when needed, (not necesaary)). */
+
+  /* similarly "animation-iteration-count" repeat that animation to number of times we have mentioned (in this case - 3 times). */
+  /* also in animation: my move line 5s animation duration, and infinite shows iteration-count */
+
+  /* if added "animation-direction" then object will move in that direction (in this case "reverse" ie from end to start) */
+
+
+ /* 
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  } */
+
+  /* Due to this key frame tag, this animation will apply and object will move from 0px to 200px from the top.
+  
+  Good thing about this is, that it won't just shift, you can see it moving. this makes this tag special.*/
+
+
+
+
+
+  /* Animation chaining: in this we add (chain) more than one animation together */
+
+  /* syntax */
+
+  /* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: my_move 5s infinite;
+               next_move 1s 3;
+  }
+
+  in this case next_move is chained to animation and will work along with my_move. 
+
+  /* 
+  @keyframes my_move {
+    from {top: 0px;}
+    to {top: 200px;}
+  } */
+/* 
+  @keyframes next_move {
+    0% {top: -40px;}
+    50% {top: -100px;}   
+  } */
+
+  
